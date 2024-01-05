@@ -24,12 +24,12 @@ public class BrowserServices {
     public static void searchResultValidation() {
         switch (resultText) {
             case "Crowdar":
-                String actualText1 = MobileActionManager.getText(IosBrowserConstants.CROWDAR_TEXT_LOCATOR, "XCUIElementTypeOther[15]/XCUIElementTypeStaticText");
+                String actualText1 = MobileActionManager.getText(IosBrowserConstants.RESULT_TEXT_LOCATOR, "XCUIElementTypeOther[15]/XCUIElementTypeStaticText");
                 Assert.assertTrue(actualText1.contains(resultText), IosBrowserConstants.NO_RESULT_MESSAGE);
                 break;
 
             case "Lippia.io":
-                String actualText2 = MobileActionManager.getText(IosBrowserConstants.LIPPIA_TEXT_LOCATOR, "XCUIElementTypeLink[1]");
+                String actualText2 = MobileActionManager.getText(IosBrowserConstants.RESULT_TEXT_LOCATOR, "XCUIElementTypeLink[1]");
                 Assert.assertTrue(actualText2.contains(resultText), IosBrowserConstants.NO_RESULT_MESSAGE);
                 break;
         }
