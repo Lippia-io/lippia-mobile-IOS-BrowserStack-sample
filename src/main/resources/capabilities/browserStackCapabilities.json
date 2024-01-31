@@ -1,0 +1,15 @@
+{
+  "browserName": "safari",
+  "device": "{{deviceName}}",
+  "os_version": "{{os.version}}",
+  "project": "Mobile Ios sample Project",
+  "app": "{{app}}",
+  "build": "Mobile {{deviceName}} Build",
+  "name": "Bstack-[Java] Mobile Sample Test",
+  "resetKeyboard": "true",
+  "unicodeKeyboard": "true",
+  "autoGrantPermissions": "true",
+  "autoAcceptAlerts": "true",
+  "browserstack.appium_version": "1.22.0",
+  "browserstack.resignApp": "true"
+}
